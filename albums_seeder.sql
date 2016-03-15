@@ -1,5 +1,7 @@
 USE codeup_test_db;
 
+TRUNCATE albums;
+
 INSERT INTO albums (artist, name, release_date, sales, genre)
 VALUES ('Michael Jackson', 'Thriller', '1982-01-01 00:00:01', 48.1, 'Pop, rock, R&B'),
 ('AC/DC', 'Back in Black', '1980-01-01 00:00:01', 25.9, 'Hard rock'),
@@ -32,4 +34,4 @@ VALUES ('Michael Jackson', 'Thriller', '1982-01-01 00:00:01', 48.1, 'Pop, rock, 
 ('Nirvana', 'Nevermind', '1991-01-01 00:00:01', 16.7, 'Grunge, alternative rock'),
 ('Pink Floyd', 'The Wall', '1979-01-01 00:00:01', 17.6, 'Progressive rock'),
 ('Santana', 'Supernatural', '1999-01-01 00:00:01', 20.5, 'Rock'),
-('Guns N'' Roses', 'Appetite for Destruction', '1987-01-01 00:00:01', 21.3, 'Heavy metal, hard rock');('Guns N'' Roses', 'Appetite for Destruction', '1987-01-01 00:00:01', 21.3, 'Heavy metal, hard rock');
+('Guns N'' Roses', 'Appetite for Destruction', '1987-01-01 00:00:01', 21.3, 'Heavy metal, hard rock');
