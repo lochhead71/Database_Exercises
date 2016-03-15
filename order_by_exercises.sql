@@ -3,7 +3,8 @@ FROM employees
 WHERE (first_name = 'Irena'
 OR first_name = 'Vidya'
 OR first_name = 'Maya')
-AND gender ="M";
+AND gender ="M"
+ORDER BY first_name asc, last_name asc;
 
 SELECT *
 FROM employees
