@@ -4,7 +4,7 @@ WHERE (first_name = 'Irena'
 OR first_name = 'Vidya'
 OR first_name = 'Maya')
 AND gender ="M"
-ORDER BY first_name asc, last_name asc;
+ORDER BY last_name asc, first_name asc;
 
 SELECT *
 FROM employees
