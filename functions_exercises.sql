@@ -16,11 +16,11 @@ FROM employees
 WHERE last_name LIKE 'e%'
 AND last_name LIKE '%e';
 
-SELECT *
+SELECT emp_no, last_name, " ", "has worked for ", DATEDIFF(curdate(), hire_date), " days."
 FROM employees
 WHERE hire_date BETWEEN '1990-01-01' and '1999-12-31'
 AND birth_date LIKE '%-12-25'
-ORDER BY birth_date ASC, hire_date DESC;
+ORDER BY hire_date ASC;
 
 SELECT *
 FROM employees
