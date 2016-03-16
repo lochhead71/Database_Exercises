@@ -1,4 +1,4 @@
-SELECT COUNT(first_name), gender
+SELECT COUNT(gender), gender
 FROM employees
 WHERE (first_name = 'Irena'
 OR first_name = 'Vidya'
@@ -11,10 +11,10 @@ WHERE last_name LIKE 'e%'
 OR last_name LIKE '%e'
 ORDER BY emp_no desc;
 
-SELECT CONCAT(first_name, " ", last_name)
+SELECT CONCAT(first_name, " ", last_name) AS full_name
 FROM employees
-WHERE last_name LIKE 'e%'
-AND last_name LIKE '%e';
+WHERE last_name LIKE 'e%e'
+GROUP BY full_name;
 
 SELECT emp_no, last_name, " ", "has worked for ", DATEDIFF(curdate(), hire_date), " days."
 FROM employees
