@@ -49,3 +49,12 @@ FROM roles
 LEFT JOIN users ON users.role_id = roles.id
 GROUP BY roles.name
 ORDER BY roles_count DESC;
+
+SELECT d.dept_name, CONCAT(e.first_name, " ", e.last_name)
+FROM departments as d
+JOIN dept_manager as dm
+ON d.dept_no = dm.dept_no
+JOIN employees as e
+ON dm.emp_no = e.emp_no
+GROUP BY d.dept_name
+
