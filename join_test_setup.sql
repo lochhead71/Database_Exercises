@@ -42,4 +42,10 @@ LEFT JOIN roles ON users.role_id = roles.id;
 
 SELECT users.name AS user_name, roles.name AS role_name
 FROM users
-RIGHT JOIN roles ON users.role_id = roles.id
+RIGHT JOIN roles ON users.role_id = roles.id;
+
+SELECT roles.name, count(roles.name) AS roles_count
+FROM roles
+LEFT JOIN users ON users.role_id = roles.id
+GROUP BY roles.name
+ORDER BY roles_count DESC;
